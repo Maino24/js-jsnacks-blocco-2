@@ -12,10 +12,13 @@ sommaNumeri = 0
 
 
 //creo un ciclo for
-for (i = 0; i < arrayNumeri.length; i++){
+for (i = 0; i < (arrayNumeri.length - 1); i++){
+
+    
 
     if (arrayNumeri[i] % 2 !== 0 ){
-        sommaNumeri +=  arrayNumeri[i]
+        indiciDispari = arrayNumeri
+        sommaNumeri += indiciDispari[i]
         
 
     }else{
