@@ -15,7 +15,7 @@ Abbiamo una lista di nomi e una lista di cognomi, e da queste vogliamo generare 
 
     for (i = 0; i < nomi.length; i++){
 
-        if(){
+        if( ){
         nomiCognomi= nomi + cognomi
     
     console.log(nomiCognomi[i])
@@ -23,4 +23,5 @@ Abbiamo una lista di nomi e una lista di cognomi, e da queste vogliamo generare 
     document.getElementById(`output`).innerHTML= `${nomiCognomi}`
         }
 }
+
  }
