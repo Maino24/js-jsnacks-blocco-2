@@ -21,3 +21,13 @@ if (arrayUno.length > arrayDue.length){
 
 //quanti elementi mancano per rendere l'array minore uguale all'array maggiore
 let differenzaLunghezza = arrayMaggiore.length - arrayMinore.length;
+
+
+for( i = 0; i < differenzaLunghezza; i++){
+    let numeroRandom = Math.floor(Math.random() * 100);
+    console.log(`numero ciclo: ${i} e il numero random è: ${numeroRandom}`)
+    arrayMinore.push( numeroRandom );
+}
+
+console.log(arrayMinore);
+document.getElementById(`output`).innerHTML= `${arrayMinore}`;
