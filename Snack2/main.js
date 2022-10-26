@@ -6,22 +6,19 @@ Abbiamo una lista di nomi e una lista di cognomi, e da queste vogliamo generare 
 //creo un array per il nome e uno per i cognomi
  const nomi = [`gabriele`, `giorgio`, `marco`, `alessandro`, `michele`]
  const cognomi = [`rossi`, `bianchi`, `verdi`, `ferrari`, `motta`]
+ const nomiCognomi = []
 
- //creo una funzione che mi permette di associare un nome con un cognome
- 
- function genera(){
+
+ let nomiCasuale = Math.floor(Math.random() * nomi.length);
+ let cognomiCasuale = Math.floor(Math.random() * cognomi.length);
+
+ console.log(`${nomi[nomiCasuale]} ${cognomi[cognomiCasuale]}`);
+ document.getElementById(`output`).innerHTML= `${nomi[nomiCasuale]} ${cognomi[cognomiCasuale]}`
+
+ for ( let i = 0; i < cognomi.length, i++){
+
     
-    //let nomiCognomi = ``
-
-    for (i = 0; i < nomi.length; i++){
-
-        if( ){
-        nomiCognomi= nomi + cognomi
-    
-    console.log(nomiCognomi[i])
-
-    document.getElementById(`output`).innerHTML= `${nomiCognomi}`
-        }
-}
-
  }
+
+ //estrarre un dato da un array
+ //nomeArray[posizioneElemento] -> nomeArray[2] -> estrarre il dato dell'array in posizione 2
