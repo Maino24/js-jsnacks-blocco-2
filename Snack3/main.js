@@ -12,20 +12,18 @@ sommaNumeri = 0
 
 
 //creo un ciclo for
-for (i = 0; i < (arrayNumeri.length - 1); i++){
+for ( let i = 0; i < arrayNumeri.length; i++){
 
-    
-
-    if (arrayNumeri[i] % 2 !== 0 ){
-        indiciDispari = arrayNumeri
-        sommaNumeri += indiciDispari[i]
+    //controllo se la posizione è dispari
+    if ( i % 2 !== 0 ){
         
-
+        sommaNumeri = sommaNumeri + arrayNumeri[i]
+        
     }else{
 
     }
 
     console.log(sommaNumeri)
-    document.getElementById(`sommaNumeriDispari`).innerHTML= `${sommaNumeri}`
+    document.getElementById(`sommaNumeriDispari`).innerHTML= `La somma di numeri in posizione dispari nell'array è : ${sommaNumeri}`
 }
 
