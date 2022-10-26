@@ -9,16 +9,20 @@ Abbiamo una lista di nomi e una lista di cognomi, e da queste vogliamo generare 
  const nomiCognomi = []
 
 
+for ( let i = 0; i < cognomi.length; i++){//25 perchè è il numero massimo di possibili combinzzioni senza ripetizioni
+
+//creo due varibaili che hanno come valore un "numero" casuale
  let nomiCasuale = Math.floor(Math.random() * nomi.length);
  let cognomiCasuale = Math.floor(Math.random() * cognomi.length);
 
  console.log(`${nomi[nomiCasuale]} ${cognomi[cognomiCasuale]}`);
- document.getElementById(`output`).innerHTML= `${nomi[nomiCasuale]} ${cognomi[cognomiCasuale]}`
+ //document.getElementById(`output`).innerHTML= `${nomi[nomiCasuale]} ${cognomi[cognomiCasuale]}`
 
- for ( let i = 0; i < cognomi.length, i++){
-
-    
+ nomiCognomi.push( `${nomi[nomiCasuale]} ${[cognomi[cognomiCasuale]]}` )
  }
+
+ console.log(nomiCognomi)
+ document.getElementById(`output`).innerHTML= `${nomiCognomi}`
 
  //estrarre un dato da un array
  //nomeArray[posizioneElemento] -> nomeArray[2] -> estrarre il dato dell'array in posizione 2
